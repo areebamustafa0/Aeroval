@@ -1,0 +1,17 @@
+# Dependencies and framework output
+node_modules/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+
+# Secrets: never commit real credentials
+.env
+.env.*
+!.env.example
+
+# Neon CLI local project linkage and credentials
+.neon
+
+# Temporary visual test screenshots
+public/__*

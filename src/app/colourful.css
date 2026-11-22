@@ -1,0 +1,178 @@
+/* AEROVÉL: colour accents inspired by ocean water, clear skies and golden sunsets. */
+:root {
+  --aero-ocean: #0e7582;
+  --aero-ocean-dark: #0b5968;
+  --aero-sky: #eaf5f6;
+  --aero-coral: #c9755c;
+  --aero-sunset: #e4b775;
+}
+
+.aero-hero-overlay {
+  background: linear-gradient(90deg, rgba(5,29,43,.91) 0%, rgba(9,35,50,.73) 30%, rgba(10,35,51,.19) 66%, rgba(8,30,43,.06) 100%),
+              linear-gradient(0deg, rgba(5,20,34,.48) 0%, transparent 34%, rgba(6,22,36,.18) 100%);
+}
+.aero-hero-title em { color: #f0c894; }
+.aero-hero-primary { background: linear-gradient(125deg, #f6dcb2, #e8b67f); }
+.aero-hero-kicker, .aero-hero-note svg { color: #f0ce9c; }
+
+/* Coloured search accents remain high-contrast and restrained. */
+.aero-editorial-search { border-color: #dce9e6; }
+.aero-tab-active { background: #d8efec; color: #075d68; }
+.aero-editorial-search .aero-search-control:hover { border-color: #76b6b5; }
+.aero-editorial-search .aero-search-control:focus-visible { outline-color: #247f89; }
+.aero-editorial-search .aero-search-control svg { color: #16808a; }
+.aero-search-submit { background: #106a78; }
+.aero-search-submit:hover:not(:disabled) { background: #0d5365; }
+.aero-assurance:nth-child(1) .aero-assurance-icon { background: #dff2ef; color: #16877f; }
+.aero-assurance:nth-child(2) .aero-assurance-icon { background: #e7f1fa; color: #4487b0; }
+.aero-assurance:nth-child(3) .aero-assurance-icon { background: #fff0e5; color: #bf7d57; }
+.aero-assurance:nth-child(4) .aero-assurance-icon { background: #f1edf9; color: #8173a6; }
+
+/* The destination collection keeps its editorial paper tone, with ocean accents. */
+.aero-collection { background: #f8f8f4; }
+.aero-collection-intro h2 em, .aero-explore-intro h2 em { color: #147d84; }
+.aero-collection-bottom a { color: #0d7581; }
+.aero-section-kicker { color: #14818a; }
+.aero-section-kicker > span { background: #69aaa7; }
+.aero-region-pill.is-active { background: #126e7b; }
+.aero-collection-shade { background: linear-gradient(0deg, rgba(5,24,35,.8), rgba(5,29,38,.08) 56%, transparent); }
+.aero-collection-tile:hover .aero-collection-arrow { background: #a8dad2; border-color: #a8dad2; color: #103e4d; }
+
+/* Warm cabin and editorial sections balance the cooler flight area. */
+.aero-experience { background: #f7f0e8; }
+.aero-experience-heading h2 em { color: #b4785d; }
+.aero-experience-aside-copy { background: #123f4c; }
+.aero-experience-aside-copy a { color: #f1c793; }
+.aero-experience-benefits > div { color: #16818a; }
+.aero-testimonials { background: #f8f5ef; }
+.aero-testimonials-heading h2 em { color: #b7785c; }
+.aero-stars, .aero-quote-mark { color: #d3a563; }
+
+/* Featured flights */
+.featured-flights { position: relative; overflow: hidden; padding: 74px 0 80px; background: #e9f4f4; }
+.featured-flights:before { position: absolute; top: -210px; right: -150px; width: 440px; height: 440px; border: 1px solid rgba(33,137,144,.10); border-radius: 50%; content: ""; pointer-events: none; }
+.featured-flights:after { position: absolute; top: -160px; right: -100px; width: 340px; height: 340px; border: 1px solid rgba(33,137,144,.08); border-radius: 50%; content: ""; pointer-events: none; }
+.featured-flights > .container-x { position: relative; z-index: 1; }
+.featured-heading { display: flex; align-items: end; justify-content: space-between; gap: 28px; }
+.featured-kicker { display: flex; align-items: center; gap: 8px; color: #177e84; font-size: 9px; font-weight: 800; letter-spacing: .19em; }
+.featured-kicker svg { color: #d28c62; }
+.featured-heading h2 { margin-top: 12px; color: #132942; font-family: var(--font-display); font-size: clamp(2rem,3.5vw,3.15rem); font-weight: 500; line-height: 1.12; letter-spacing: -.02em; }
+.featured-heading h2 em { color: #16818a; font-weight: 400; }
+.featured-heading > div > p:last-child { margin-top: 13px; color: #6c818b; font-size: 13px; line-height: 1.7; }
+.featured-view-all { display: inline-flex; flex: none; align-items: center; gap: 9px; padding-bottom: 3px; border-bottom: 1px solid #8abdbb; color: #0e6e7b; font-size: 10px; font-weight: 800; letter-spacing: .12em; transition: color .2s, border-color .2s; }
+.featured-view-all:hover { border-color: #0e6e7b; color: #163f50; }
+.featured-flight-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 18px; margin-top: 34px; }
+.featured-flight-card { min-width: 0; overflow: hidden; border: 1px solid rgba(28,107,111,.10); border-radius: 13px; background: #fff; box-shadow: 0 7px 22px rgba(24,73,78,.07); transition: transform .3s, box-shadow .3s; }
+.featured-flight-card:hover { transform: translateY(-4px); box-shadow: 0 18px 35px rgba(24,73,78,.12); }
+.featured-flight-image { position: relative; height: 190px; overflow: hidden; background: #b9dedb; }
+.featured-flight-image-shade { position: absolute; inset: 0; background: linear-gradient(0deg,rgba(5,24,37,.82),rgba(7,27,40,.12) 67%,rgba(7,27,40,.17)); }
+.featured-flight-tag { position: absolute; z-index: 1; top: 14px; left: 15px; padding: 6px 9px; border: 1px solid rgba(255,255,255,.34); border-radius: 999px; background: rgba(10,48,59,.38); color: #fff; font-size: 9px; font-weight: 800; letter-spacing: .1em; backdrop-filter: blur(6px); }
+.featured-flight-place { position: absolute; z-index: 1; right: 18px; bottom: 15px; left: 18px; color: #fff; }
+.featured-flight-place span { color: #bcebe4; font-size: 9px; font-weight: 800; letter-spacing: .17em; text-transform: uppercase; }
+.featured-flight-place h3 { margin-top: 4px; font-family: var(--font-display); font-size: 26px; font-weight: 500; line-height: 1; }
+.featured-flight-body { padding: 18px; }
+.featured-flight-route { display: flex; align-items: center; justify-content: space-between; gap: 9px; }
+.featured-flight-route > div:first-child, .featured-flight-route > div:last-child { min-width: 0; }
+.featured-flight-route strong, .featured-flight-route span { display: block; }
+.featured-flight-route strong { color: #142a42; font-family: var(--font-num); font-size: 20px; font-weight: 750; line-height: 1.15; letter-spacing: -.02em; }
+.featured-flight-route > div:first-child > span, .featured-flight-route > div:last-child > span { max-width: 90px; overflow: hidden; margin-top: 4px; color: #8b9ba2; font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
+.featured-flight-line { display: flex; flex: 1; align-items: center; gap: 5px; color: #198993; }
+.featured-flight-line span { height: 1px; flex: 1; border-top: 1px dashed #b5d2d1; }
+.featured-flight-line svg { flex: none; }
+.featured-flight-meta { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 16px; padding: 10px 0; border-top: 1px solid #edf0ee; border-bottom: 1px solid #edf0ee; color: #778a93; font-size: 10px; font-weight: 600; }
+.featured-flight-meta span:first-child { display: flex; align-items: center; gap: 6px; }
+.featured-flight-meta svg { color: #41999a; }
+.featured-flight-airline { display: flex; align-items: center; gap: 6px; margin-top: 12px; color: #71828b; font-size: 10px; font-weight: 600; }
+.featured-airline-dot { width: 7px; height: 7px; flex: none; border-radius: 50%; background: #2aa394; }
+.featured-seats { margin-left: auto; color: #168078; font-weight: 700; white-space: nowrap; }
+.featured-flight-bottom { display: flex; align-items: end; justify-content: space-between; gap: 8px; margin-top: 17px; }
+.featured-flight-bottom > div { white-space: nowrap; }
+.featured-flight-bottom > div > span { display: block; margin-bottom: 3px; color: #a0aaad; font-size: 8px; font-weight: 800; letter-spacing: .14em; }
+.featured-flight-bottom strong { color: #142a42; font-family: var(--font-num); font-size: 24px; font-weight: 750; line-height: 1; letter-spacing: -.035em; }
+.featured-flight-bottom small { color: #9da7aa; font-size: 9px; }
+.featured-flight-bottom a { display: inline-flex; min-height: 38px; align-items: center; justify-content: center; gap: 7px; padding: 0 12px; border-radius: 7px; background: #116f7a; color: #fff; font-size: 9px; font-weight: 800; letter-spacing: .08em; white-space: nowrap; transition: background .2s; }
+.featured-flight-bottom a:hover { background: #104e5d; }
+.featured-baggage { display: flex; align-items: center; gap: 5px; margin-top: 13px; color: #a1acae; font-size: 9px; }
+.featured-baggage svg { color: #7aabaa; }
+.featured-disclaimer { margin-top: 18px; color: #829b9d; font-size: 10px; }
+.featured-empty { display: flex; align-items: center; gap: 14px; margin-top: 30px; padding: 25px; border: 1px solid #d1e6e3; border-radius: 13px; background: #fff; color: #678086; font-size: 13px; }
+.featured-empty > svg { flex: none; color: #14808a; }
+.featured-empty a { display: flex; align-items: center; gap: 6px; margin-left: auto; color: #0b6d79; font-size: 10px; font-weight: 800; white-space: nowrap; }
+/* Flight search uses an aircraft image without sacrificing form contrast. */
+.flight-search-hero-image { object-position: 70% 45%; }
+.flight-search-hero-shade { background: linear-gradient(90deg, rgba(6,24,39,.98) 0%, rgba(7,29,44,.91) 45%, rgba(8,39,50,.57) 100%), linear-gradient(0deg, rgba(4,18,31,.7), transparent 65%); }
+.flight-search-hero .glass { background: rgba(7,26,40,.74); border-color: rgba(183,224,217,.15); }
+.aero-flight-results input[type="range"] { accent-color: #16818a; }
+.aero-flight-result { border-color: #dcebe8; }
+.aero-flight-result .btn-gold { background: #177984; color: #fff; box-shadow: 0 8px 20px -12px rgba(17,112,122,.55); }
+.aero-flight-result .btn-gold:hover:not(:disabled) { background: #105e6c; }
+@media (min-width: 1024px) {
+  .flights-mobile-filter { display: none !important; }
+}
+@media (max-width: 1023px) {
+  .featured-flight-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media (max-width: 639px) {
+  .featured-flights { padding: 60px 0 65px; }
+  .featured-heading { display: block; }
+  .featured-view-all { margin-top: 20px; }
+  .featured-flight-grid { display: flex; gap: 14px; overflow-x: auto; margin-right: -24px; padding: 0 24px 12px 0; scroll-snap-type: x mandatory; scrollbar-width: none; }
+  .featured-flight-grid::-webkit-scrollbar { display: none; }
+  .featured-flight-card { width: min(86vw,310px); flex: 0 0 min(86vw,310px); scroll-snap-align: start; }
+  .featured-flight-image { height: 180px; }
+  .featured-empty { flex-wrap: wrap; }
+  .featured-empty a { margin-left: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .featured-flight-card, .featured-flight-image img { transition: none; }
+}
+
+/* ────────────────────────── final visual polish ────────────────────────── */
+:root { --aero-focus: #17828a; }
+:focus-visible { outline: 2px solid var(--aero-focus); outline-offset: 3px; }
+::selection { background: #cfe9e5; color: #0b2b3a; }
+
+/* A faint atmospheric wash instead of a hard section boundary. */
+.aero-collection-home { position: relative; }
+.aero-collection-home:before {
+  position: absolute; top: 0; left: 0; right: 0; height: 220px;
+  background: linear-gradient(180deg, rgba(232,244,243,.72), transparent);
+  content: ""; pointer-events: none;
+}
+.aero-collection-home > .container-x { position: relative; z-index: 1; }
+.featured-flights { border-top: 1px solid rgba(20,108,116,.08); }
+
+/* Quieter, more expensive-looking elevations. */
+.card, .featured-flight-card { transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease; }
+.featured-flight-card:hover { border-color: rgba(20,108,116,.25); }
+.aero-flight-result:hover { border-color: rgba(23,129,138,.28); box-shadow: 0 16px 40px -22px rgba(20,80,90,.28); }
+.aero-collection-tile:hover .aero-collection-caption h3 { text-shadow: 0 3px 18px rgba(0,0,0,.22); }
+
+/* Editorial hairline under every main heading. */
+.aero-collection-intro, .aero-testimonials-heading, .featured-heading > div { position: relative; }
+.aero-collection-intro:after, .aero-testimonials-heading:after {
+  display: block; width: 46px; height: 1px; margin: 22px auto 0;
+  background: linear-gradient(90deg, transparent, #b9a173, transparent);
+  content: "";
+}
+.featured-heading > div:after {
+  display: block; width: 46px; height: 1px; margin-top: 18px;
+  background: linear-gradient(90deg, #16818a, transparent);
+  content: "";
+}
+
+/* Navigation and buttons: a touch more definition. */
+.no-print header nav a[aria-current="page"] { color: #f1d6a9; }
+.aero-hero-primary { box-shadow: 0 10px 30px rgba(2,12,25,.18), inset 0 1px 0 rgba(255,255,255,.45); }
+.aero-search-submit { box-shadow: inset 0 1px 0 rgba(255,255,255,.12); }
+.featured-flight-bottom a { box-shadow: inset 0 1px 0 rgba(255,255,255,.12); }
+
+/* Mobile: keep the app bar calm and content uncluttered. */
+@media (max-width: 767px) {
+  .featured-heading h2 { max-width: 330px; }
+  .aero-collection-intro:after, .aero-testimonials-heading:after { margin-top: 16px; }
+  .aero-hero-note { letter-spacing: .15em; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .card, .aero-collection-tile:hover .aero-collection-caption h3 { transition: none; }
+}
